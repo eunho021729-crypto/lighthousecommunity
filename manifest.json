@@ -1,0 +1,22 @@
+
+{
+  "name": "등대마을공동체",
+  "short_name": "등대마을",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fbfaf6",
+  "theme_color": "#5d7055",
+  "description": "등대마을공동체는 주민과 함께 성장하며, 나눔으로 더 나은 내일을 만듭니다.",
+  "icons": [
+    {
+      "src": "images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

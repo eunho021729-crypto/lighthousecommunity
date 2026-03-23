@@ -1,14 +1,185 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>등대마을공동체</title>
+    <link rel="stylesheet" href="style.v2.css">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">💡 등대마을공동체</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#village-space">마을 공간</a></li>
+                <li><a href="#community-goods">마을 굿즈</a></li>
+                <li><a href="#project-funding">프로젝트 펀딩</a></li>
+                <li><a href="#reviews">공동체 후기</a></li>
+                <li><a href="login.html" class="btn-login">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>함께 만들어가는 따뜻한 마을  <br> 등대마을공동체</h1>
+            <p>어두운 바다를 비추는 등대처럼, 주민들이 함께 모여 배우고 나누며 성장하는 공간입니다.<br>다양한 공간과 프로그램을 통해 이웃과 소통하고, 따뜻한 나눔을 실천해보세요.</p>
+            <a href="#village-space" class="btn-primary">공간 둘러보기</a>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <!-- Village Space Section -->
+        <section id="village-space" style="margin-bottom: 5rem;">
+            <div class="section-header">
+                <h2>🏡 마을 공간</h2>
+            </div>
+            <div class="space-intro">
+                <p>등대마을공동체의 다양한 공간들을 소개합니다. 주민 누구나 자유롭게 이용하며 소통하고 성장하는 공간입니다.</p>
+            </div>
+            <div class="space-list">
+                <div class="space-item">
+                    <img src="images/space_1.jpg" alt="넓고 밝은 다목적 홀의 모습">
+                    <h3>등대홀</h3>
+                    <p>강연, 공연, 영화 상영 등 다양한 주민 공동체 활동이 이루어지는 다목적 홀입니다.</p>
+                </div>
+                <div class="space-item">
+                    <img src="images/space_2.jpg" alt="책이 가득한 아늑한 서재의 모습">
+                    <h3>마을서재</h3>
+                    <p>책과 보드게임을 즐기며 이웃과 함께하는 즐거운 공간입니다.</p>
+                </div>
+                <div class="space-item">
+                    <img src="images/space_3.jpg" alt="아늑한 분위기의 카페 내부">
+                    <h3>카페앤디저트</h3>
+                    <p>향긋한 커피와 달콤한 디저트를 즐기며 잠시 쉬어가는 공간입니다.</p>
+                </div>
+                <div class="space-item">
+                    <img src="images/space_4.jpg" alt="마을 정보를 안내하는 사무실 공간">
+                    <h3>마을정보사무실</h3>
+                    <p>이곳에서는 마을의 정보가 공유됩니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Goods Section -->
+        <section id="community-goods" style="margin-bottom: 5rem;">
+            <div class="section-header">
+                <h2>🎁 등대마을공동체 굿즈</h2>
+            </div>
+            <div class="goods-intro">
+                <p>등대마을공동체의 가치를 담은 특별한 굿즈들을 만나보세요. 모든 수익금은 우리 마을을 더욱 밝고 따뜻하게 만드는 데 사용됩니다.</p>
+            </div>
+            <div class="goods-list">
+                <div class="goods-item">
+                    <img src="images/goods_1.jpg" alt="등대마을 로고가 그려진 하얀색 머그컵">
+                    <h3>등대마을 머그컵</h3>
+                    <p>따뜻한 차 한 잔과 함께, 등대마을의 온기를 느껴보세요.</p>
+                    <span class="price">12,000원</span>
+                </div>
+                <div class="goods-item">
+                    <img src="images/goods_2.jpg" alt="등대마을 로고와 일러스트가 그려진 베이지색 에코백">
+                    <h3>등대마을 에코백</h3>
+                    <p>환경을 생각하는 당신의 착한 소비, 등대마을 에코백과 함께하세요.</p>
+                    <span class="price">15,000원</span>
+                </div>
+            </div>
+            <div class="smartstore-banner">
+                <h3>스마트스토어에서 더 다양한 굿즈를 만나보세요!</h3>
+                <a href="https://sell.smartstore.naver.com/#/home/dashboard" class="btn-smartstore-large" target="_blank">스마트스토어 바로가기</a>
+            </div>
+        </section>
+
+        <!-- Project Funding Section -->
+        <section id="project-funding" style="margin-bottom: 5rem;">
+            <div class="section-header">
+                <h2>💡 진행중인 프로젝트</h2>
+            </div>
+            <div class="project-list">
+                <div class="project-item">
+                    <img src="images/project_1.jpg" alt="따뜻한 겨울나기 키트 구성품 (목도리, 핫팩, 즉석식품 등)">
+                     <div class="project-info">
+                        <h3>어르신들을 위한 따뜻한 겨울나기 키트 제작</h3>
+                        <p>독거 어르신들이 따뜻한 겨울을 보낼 수 있도록 방한용품과 식료품 키트를 제작하여 전달합니다.</p>
+                        <div class="funding-status">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                            <div class="status-text">
+                                <span class="amount">7,500,000원</span> / 10,000,000원 (75%)
+                            </div>
+                        </div>
+                        <a href="#" class="btn-primary">펀딩 참여하기</a>
+                    </div>
+                </div>
+                 <div class="project-item">
+                    <img src="images/project_2.jpg" alt="청소년과 멘토가 함께 웃으며 대화하는 모습">
+                     <div class="project-info">
+                        <h3>청소년 멘토링 프로그램 운영</h3>
+                        <p>마을 청소년들이 꿈을 찾고 건강하게 성장할 수 있도록 다양한 분야의 멘토와 연결합니다.</p>
+                        <div class="funding-status">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 40%;"></div>
+                            </div>
+                            <div class="status-text">
+                                <span class="amount">4,000,000원</span> / 10,000,000원 (40%)
+                            </div>
+                        </div>
+                        <a href="#" class="btn-primary">펀딩 참여하기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Reviews Section -->
+        <section id="reviews">
+            <div class="section-header">
+                <h2>👥 공동체 후기</h2>
+            </div>
+            <div class="review-intro">
+                <p>등대마을공동체와 함께한 소중한 경험들을 나눠주세요. 프로젝트 펀딩, 공간 이용, 굿즈 구매 등 다양한 후기를 기다립니다.</p>
+            </div>
+            <div class="review-list">
+                <div class="review-item">
+                    <div class="review-content">
+                        <p>"작은 금액이지만 좋은 일에 쓰인다니 기쁘네요. 어르신들께서 따뜻한 겨울을 보내시는 데 조금이나마 보탬이 되었으면 좋겠습니다."</p>
+                    </div>
+                    <div class="review-author">
+                        <span>- 김*정 님 (프로젝트 펀딩 후기)</span>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-content">
+                        <p>"마을서재에서 아이들과 함께 보드게임을 하며 즐거운 시간을 보냈어요. 아늑하고 편안한 공간이라 자주 이용하게 될 것 같아요."</p>
+                    </div>
+                    <div class="review-author">
+                        <span>- 박*서 님 (공간 이용 후기)</span>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-content">
+                        <p>"등대마을 에코백 디자인이 정말 예뻐요! 환경을 생각하는 소비를 할 수 있어서 더 의미있는 것 같아요. 튼튼해서 매일 잘 사용하고 있습니다."</p>
+                    </div>
+                    <div class="review-author">
+                        <span>- 이*은 님 (굿즈 구매 후기)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-banner">
+                <h3>여러분의 소중한 후기를 기다립니다!</h3>
+                <a href="reviews.html" class="btn-primary">후기 남기기</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 등대마을공동체. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
