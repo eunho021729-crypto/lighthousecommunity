@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>프로젝트 둘러보기 - 등대마을공동체</title>
+    <title>프로젝트 후원하기 - 등대마을공동체</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
 </head>
@@ -24,53 +24,34 @@
     </header>
 
     <main class="container">
-        <div class="section-header">
-            <h2>💡 진행중인 프로젝트</h2>
-        </div>
-
-        <div class="project-list">
-            <!-- 프로젝트 아이템 예시 -->
-            <div class="project-item">
-                <img src="images/project_1.jpg" alt="따뜻한 겨울나기 키트 구성품 (목도리, 핫팩, 즉석식품 등)">
-                 <div class="project-info">
-                    <h3>어르신들을 위한 따뜻한 겨울나기 키트 제작</h3>
-                    <p>독거 어르신들이 따뜻한 겨울을 보낼 수 있도록 방한용품과 식료품 키트를 제작하여 전달합니다.</p>
-                    <div class="funding-status">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 75%;"></div>
-                        </div>
-                        <div class="status-text">
-                            <span class="amount">7,500,000원</span> / 10,000,000원 (75%)
-                        </div>
-                    </div>
-                    <a href="#" class="btn-primary">펀딩 참여하기</a>
-                </div>
+        <section id="donation-form-section">
+            <div class="section-header">
+                <h2>프로젝트 후원하기</h2>
             </div>
-
-             <div class="project-item">
-                <img src="images/project_2.jpg" alt="청소년과 멘토가 함께 웃으며 대화하는 모습">
-                 <div class="project-info">
-                    <h3>청소년 멘토링 프로그램 운영</h3>
-                    <p>마을 청소년들이 꿈을 찾고 건강하게 성장할 수 있도록 다양한 분야의 멘토와 연결합니다.</p>
-                    <div class="funding-status">
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 40%;"></div>
-                        </div>
-                        <div class="status-text">
-                            <span class="amount">4,000,000원</span> / 10,000,000원 (40%)
-                        </div>
-                    </div>
-                    <a href="#" class="btn-primary">펀딩 참여하기</a>
+            <form id="donation-form">
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-            </div>
-
-            <!-- 더 많은 프로젝트 아이템 추가 가능 -->
-        </div>
-
+                <div class="form-group">
+                    <label for="amount">후원금액</label>
+                    <input type="number" id="amount" name="amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">응원 메시지</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">후원하기</button>
+            </form>
+        </section>
     </main>
 
     <footer>
         <p>© 2024 등대마을공동체. All rights reserved.</p>
     </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

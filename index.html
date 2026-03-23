@@ -113,7 +113,7 @@
                                 <span class="amount">7,500,000원</span> / 10,000,000원 (75%)
                             </div>
                         </div>
-                        <a href="#" class="btn-primary">펀딩 참여하기</a>
+                        <a href="donation.html" class="btn-primary">펀딩 참여하기</a>
                     </div>
                 </div>
                  <div class="project-item">
@@ -129,7 +129,7 @@
                                 <span class="amount">4,000,000원</span> / 10,000,000원 (40%)
                             </div>
                         </div>
-                        <a href="#" class="btn-primary">펀딩 참여하기</a>
+                        <a href="donation.html" class="btn-primary">펀딩 참여하기</a>
                     </div>
                 </div>
             </div>
@@ -143,32 +143,7 @@
             <div class="review-intro">
                 <p>등대마을공동체와 함께한 소중한 경험들을 나눠주세요. 프로젝트 펀딩, 공간 이용, 굿즈 구매 등 다양한 후기를 기다립니다.</p>
             </div>
-            <div class="review-list">
-                <div class="review-item">
-                    <div class="review-content">
-                        <p>"작은 금액이지만 좋은 일에 쓰인다니 기쁘네요. 어르신들께서 따뜻한 겨울을 보내시는 데 조금이나마 보탬이 되었으면 좋겠습니다."</p>
-                    </div>
-                    <div class="review-author">
-                        <span>- 김*정 님 (프로젝트 펀딩 후기)</span>
-                    </div>
-                </div>
-                <div class="review-item">
-                    <div class="review-content">
-                        <p>"마을서재에서 아이들과 함께 보드게임을 하며 즐거운 시간을 보냈어요. 아늑하고 편안한 공간이라 자주 이용하게 될 것 같아요."</p>
-                    </div>
-                    <div class="review-author">
-                        <span>- 박*서 님 (공간 이용 후기)</span>
-                    </div>
-                </div>
-                <div class="review-item">
-                    <div class="review-content">
-                        <p>"등대마을 에코백 디자인이 정말 예뻐요! 환경을 생각하는 소비를 할 수 있어서 더 의미있는 것 같아요. 튼튼해서 매일 잘 사용하고 있습니다."</p>
-                    </div>
-                    <div class="review-author">
-                        <span>- 이*은 님 (굿즈 구매 후기)</span>
-                    </div>
-                </div>
-            </div>
+            <div id="reviews-container"></div>
             <div class="review-banner">
                 <h3>여러분의 소중한 후기를 기다립니다!</h3>
                 <a href="reviews.html" class="btn-primary">후기 남기기</a>
@@ -181,5 +156,8 @@
         <p>© 2024 등대마을공동체. All rights reserved.</p>
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
